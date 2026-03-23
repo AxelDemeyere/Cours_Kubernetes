@@ -159,7 +159,7 @@ deployment "exo4-api" successfully rolled out
 ## Étape 11 — Tester les nouvelles routes de l'API v2
 
 ```bash
-curl http://127.0.0.1:3000/
+http://127.0.0.1:3000/
 ```
 
 ```
@@ -169,7 +169,7 @@ curl http://127.0.0.1:3000/
 ```
 
 ```bash
-curl http://127.0.0.1:3000/users
+http://127.0.0.1:3000/users
 ```
 
 ```
@@ -179,7 +179,7 @@ curl http://127.0.0.1:3000/users
 ```
 
 ```bash
-curl http://127.0.0.1:3000/items
+http://127.0.0.1:3000/products
 ```
 
 ```
