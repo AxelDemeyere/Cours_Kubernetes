@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e71a047-b8a4-4000-9c4d-b4041aede292" name="Changes" comment="" />
+    <list default="true" id="5e71a047-b8a4-4000-9c4d-b4041aede292" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/exo2/exo2_commands.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +59,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/a.demeyere/WebstormProjects/Kubernetes/exo2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -69,9 +73,10 @@
 }</component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1774335619381" />
+    <option name="spentUsd" value="0.01887085" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="9" />
+    <option name="suspendCountdown" value="8" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -93,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774256861936</updated>
-      <workItem from="1774256864004" duration="2163000" />
+      <workItem from="1774256864004" duration="3347000" />
     </task>
     <servers />
   </component>
