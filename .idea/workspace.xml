@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e71a047-b8a4-4000-9c4d-b4041aede292" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/exo2/exo2_commands.md" afterDir="false" />
+    <list default="true" id="5e71a047-b8a4-4000-9c4d-b4041aede292" name="Changes" comment="exo 3 ok">
+      <change afterPath="$PROJECT_DIR$/exo4/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exo4/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exo4/exercice_api.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exo4/exo4_commands.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exo4/gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exo4/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +33,18 @@
     </selectedModels>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="4" />
+    <option name="cachedIndexableFilesCount" value="9" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,34 +67,39 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/a.demeyere/WebstormProjects/Kubernetes/exo2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "C:/Users/a.demeyere/WebstormProjects/Kubernetes/exo4",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1774335619381" />
-    <option name="spentUsd" value="0.01887085" />
+    <option name="spentUsd" value="0.05799485" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="8" />
+    <option name="suspendCountdown" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\a.demeyere\WebstormProjects\Kubernetes\exo4" />
+      <recent name="C:\Users\a.demeyere\WebstormProjects\Kubernetes\exo3" />
       <recent name="C:\Users\a.demeyere\WebstormProjects\Kubernetes\exo2" />
       <recent name="C:\Users\a.demeyere\WebstormProjects\Kubernetes\exo1" />
     </key>
@@ -98,12 +118,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774256861936</updated>
-      <workItem from="1774256864004" duration="3347000" />
+      <workItem from="1774256864004" duration="4011000" />
+      <workItem from="1774270763414" duration="3468000" />
     </task>
+    <task id="LOCAL-00001" summary="exo 2 ok">
+      <option name="closed" value="true" />
+      <created>1774261079352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774261079352</updated>
+    </task>
+    <task id="LOCAL-00002" summary="exo 3 ok">
+      <option name="closed" value="true" />
+      <created>1774273642018</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774273642018</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exo 2 ok" />
+    <MESSAGE value="exo 3 ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="exo 3 ok" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
