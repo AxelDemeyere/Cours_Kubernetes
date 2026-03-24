@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app-2048
+  labels:
+    app: app-2048
+spec:
+  containers:
+    - name: app-2048
+      image: quchaonet/2048
+      ports:
+        - containerPort: 8080
