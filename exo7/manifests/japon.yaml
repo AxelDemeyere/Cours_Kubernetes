@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: api-japon
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: api-japon
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: api-japon
+        tier: backend
+    spec:
+      tolerations:
+        - key: "country"
+          operator: "Equal"
+          value: "japon"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: "country"
+                    operator: "In"
+                    values: ["japon"]
+      containers:
+        - name: api-japon
+          image: axeldemeyere/exo4-api:v2
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+
+---
+
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: service-japon
+
+spec:
+  type: NodePort
+  selector:
+    app: api-japon
+    tier: backend
+  ports:
+    - port: 3000        # Port dans le Service
+      targetPort: 3000  # Port dans le Pod
+      nodePort: 30300   # (30 000 - 32 767)
+

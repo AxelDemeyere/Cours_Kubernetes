@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: app-2048-usa
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-2048-usa
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        app: app-2048-usa
+        tier: frontend
+    spec:
+      tolerations:
+        - key: "country"
+          operator: "Equal"
+          value: "usa"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: "country"
+                    operator: "In"
+                    values: ["usa"]
+      containers:
+        - name: app-2048-usa
+          image: quchaonet/2048
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "100m"
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+
+---
+
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: service-usa
+
+spec:
+  type: NodePort
+  selector:
+    app: app-2048-usa
+    tier: frontend
+  ports:
+    - port: 8080        # Port dans le Service
+      targetPort: 8080  # Port dans le Pod
+      nodePort: 30808   # (30 000 - 32 767)
+
