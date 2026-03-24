@@ -53,3 +53,13 @@ app-2048   1/1     Running   0          31s
 ```bash
 kubectl describe pod app-2048
 ```
+
+## Bonus : Accéder à l'application sans service
+
+```bash 
+kubectl port-forward pod/app-2048 8080:8080
+```
+
+```bash
+http://localhost:8080/
+```
