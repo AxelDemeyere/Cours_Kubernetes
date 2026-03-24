@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-ip
+  labels:
+    app: nginx-ip
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx-ip
+  template:
+    metadata:
+      labels:
+        app: nginx-ip
+    spec:
+      containers:
+        - name: nginx-ip
+          image: nginxdemos/hello
+          ports:
+            - containerPort: 80
+
