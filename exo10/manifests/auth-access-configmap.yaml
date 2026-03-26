@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: auth-access-configmap
+  namespace: fullstack
+
+data:
+  AUTH_ADDRESS: auth-service
+

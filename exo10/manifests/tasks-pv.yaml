@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: PersistentVolume
+
+metadata:
+  name: tasks-pv
+
+spec:
+  storageClassName: manual
+  capacity:
+    storage: "256Mi"
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /tmp/tasks-data
+    type: DirectoryOrCreate
+  nodeAffinity:
+    required:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: kubernetes.io/hostname
+              operator: In
+              values:
+                - exo10-worker
+

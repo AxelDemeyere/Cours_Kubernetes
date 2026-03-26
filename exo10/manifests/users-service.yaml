@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: users-service
+  namespace: fullstack
+
+spec:
+  type: ClusterIP
+  selector:
+    app: users
+  ports:
+    - port: 8080
+      targetPort: 8080
+
